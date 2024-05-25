@@ -1,0 +1,26 @@
+<div class="login-container">
+  <div class="login-form-container">
+    <h1>
+      <a routerLink="/">Sync <span>up</span></a>
+    </h1>
+    <form (ngSubmit)="onLoginUser(userData)" #userData="ngForm" >
+
+    
+      <div class="input-container">
+        <label for="email">Enter email </label>
+        <input type="email" id="email" name="email" ngModel required email/>
+      </div>
+
+      <div class="input-container">
+        <label for="password">Enter password </label>
+        <input type="password" id="password" name="password" ngModel required />
+      </div>
+
+      <div class="button">
+        <button>Submit</button>
+        <a [routerLink]="'/signup'">Don't have an account <span>Sign up</span></a>
+      </div>
+
+    </form>
+  </div>
+</div>

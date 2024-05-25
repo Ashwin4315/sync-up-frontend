@@ -1,0 +1,6 @@
+<div class="bottom-bar">
+    <p>No of spots left : {{spots}}</p>
+    <button 
+    (click)="register()"
+    [disabled]="registered">{{registered?'Already Registered':'Register for this event'}}</button>
+</div>

@@ -1,0 +1,8 @@
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: rgba(168, 179, 207, 0.08)!important;
+}
+
+::ng-deep div.mat-mdc-select-panel {
+    background-color: rgb(29, 28, 28)!important;
+}
+

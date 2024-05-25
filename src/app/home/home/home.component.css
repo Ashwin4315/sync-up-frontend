@@ -1,0 +1,34 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.home-container{
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.left{
+    padding: 1rem;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.right{
+    padding: 1rem;
+   
+}
+
+.filter{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+h4{
+    margin-top: 13rem;
+    color: white;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,63 @@
+<div class="display-container">
+  <div class="left">
+    <div>
+      <h3>{{ event?.name }}</h3>
+      <div class="img">
+        <div class="img-con">
+          <img
+            class="profile"
+            [src]="event?.createdBy?.profilePhoto"
+            [alt]="event?.createdBy?.username"
+          />
+        </div>
+        <p><span>Hosted by: </span>{{ event?.createdBy?.username }}</p>
+      </div>
+    </div>
+    <div class="image">
+      <img
+        [src]="event?.eventImage"
+        [alt]="event?.name"
+        width="500"
+        height="350"
+      />
+    </div>
+
+    <div class="content">
+      <h4>Description</h4>
+      <p>{{ event?.description }}</p>
+    </div>
+    <div>
+      <h4>Total slots</h4>
+      <p>{{ event?.maxEnrollment }}</p>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="box">
+      <h4>Date :</h4>
+      <p>{{ event?.time  | date:'fullDate'}}</p>
+    </div>
+    <div class="box">
+      <h4>Type :</h4>
+      <p>{{ event?.type }}</p>
+    </div>
+    <div class="box">
+      <h4>Domain :</h4>
+      <p>{{ event?.domain }}</p>
+    </div>
+    <div>
+      <button (click)="redirectToNewTab()" *ngIf="event?.lat">
+        <app-map
+          [draggable]="false"
+          [latitude]="event.lat"
+          [markerText]="'Event location'"
+          [disableZoomControl]="false"
+          [longitude]="event.lng"
+        ></app-map>
+      </button>
+    </div>
+  </div>
+</div>
+<div *ngIf="event?.id">
+  <app-footer [spots]="spots" [id]="event?.id"></app-footer>
+</div>

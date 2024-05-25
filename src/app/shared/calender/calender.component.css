@@ -1,0 +1,18 @@
+.demo-inline-calendar-card {
+  width: 300px;
+  background-color: rgba(168, 179, 207, 0.08);
+}
+::ng-deep .mat-calendar-body-cell-content {
+  color: aliceblue !important;
+}
+
+::ng-deep .mat-calendar-body-label {
+  color: #e669fb !important;
+}
+
+::ng-deep
+  .mat-calendar-body-today:not(.mat-calendar-body-selected):not(
+    .mat-calendar-body-comparison-identical
+  ) {
+  border-color: #e669fb !important;
+}

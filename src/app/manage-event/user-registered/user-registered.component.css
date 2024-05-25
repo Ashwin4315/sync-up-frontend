@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  background-color: rgba(46, 46, 47, 0.08);
+  border: 1px solid rgba(168, 179, 207, 0.16);
+}
+
+.user-container{
+    padding: 2rem;
+
+}
+
+h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+::ng-deep .mat-mdc-header-cell{
+    border-bottom-color: white!important;
+}

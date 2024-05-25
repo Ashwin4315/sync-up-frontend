@@ -1,0 +1,20 @@
+<div class="register-container">
+  <h3>Registered Events</h3>
+  <div class="registered-cards-constainer" *ngIf="events">
+    <mat-card class="event-card" *ngFor="let event of events">
+      <div (click)="onClickEvent(event.id)">
+        <img mat-card-image [src]="event?.eventImage" [alt]="event?.name" />
+        <div class="content">
+          <h4>{{ event?.name }}</h4>
+          <div class="time">
+            <mat-icon aria-hidden="false" fontIcon="event"></mat-icon>
+            <p>
+              {{ event?.time | date:'fullDate' }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <h3 style="color: aliceblue; margin-top: 3rem;" *ngIf="events.length===0">You registered for no event</h3>
+</div>

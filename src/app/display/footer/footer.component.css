@@ -1,0 +1,19 @@
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+    left: 15%;
+    background-color: rgb(37, 40, 46);
+    border: 1px solid rgba(168, 179, 207, 0.16);    
+    padding: 1.5rem;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1.2rem;
+}

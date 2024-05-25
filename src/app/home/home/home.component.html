@@ -1,0 +1,16 @@
+<div class="home">
+  <app-banner></app-banner>
+  <div class="home-container">
+    <div class="left">
+      <div class="filter">
+        <app-select [inputs]="foods" title="Select Domain" (select)="onSelectDomain($event)"></app-select>
+        <app-select [inputs]="type" title="Select Type" (select)="onSelectType($event)"></app-select>
+      </div>
+      <app-calender (time)="onDateChange($event)"></app-calender>
+    </div>
+    <div class="right">
+      <app-display-card *ngIf="events" [events]="events" title="Upcoming Events"></app-display-card >
+        <h4  *ngIf="events?.length===0">OOPS ! there are no events available</h4>
+    </div>
+  </div>
+</div>

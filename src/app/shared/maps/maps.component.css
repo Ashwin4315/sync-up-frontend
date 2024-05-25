@@ -1,0 +1,7 @@
+
+::ng-deep .leaflet-control-zoom-in span,::ng-deep .leaflet-control-zoom-out span,::ng-deep .leaflet-popup-close-button span{
+    color: black!important;
+}
+::ng-deep .leaflet-popup-content{
+    color: black!important;
+}

@@ -1,0 +1,30 @@
+<div class="sign-up-container">
+  <div class="sign-up-form-container">
+    <h1>
+      <a routerLink="/">Sync <span>up</span></a>
+    </h1>
+    <form (ngSubmit)="onCreateUser(userData)" #userData="ngForm" >
+
+      <div class="input-container">
+        <label for="name">Enter name </label>
+        <input type="text" id="name" name="username" ngModel required />
+      </div>
+
+      <div class="input-container">
+        <label for="email">Enter email </label>
+        <input type="email" id="email" name="email" ngModel required email/>
+      </div>
+
+      <div class="input-container">
+        <label for="password">Enter password </label>
+        <input type="password" id="password" name="password" ngModel required />
+      </div>
+
+      <div class="button">
+        <button>Submit</button>
+        <a [routerLink]="'/login'">Already have an account <span>Log in</span></a>
+      </div>
+
+    </form>
+  </div>
+</div>

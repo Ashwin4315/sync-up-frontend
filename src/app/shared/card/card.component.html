@@ -1,0 +1,18 @@
+<div class="card-container" (click)="onClick()">
+    <div class="left">
+      <img
+        [src]="event.eventImage"
+        [alt]="event.name"
+        class="card-image-container"
+      />
+    </div>
+    <div class="right">
+      <div class="head">
+        <p>{{ event.time | date:'fullDate'}}</p>
+        <h2>{{ event.name }}</h2>
+        <p><span>Hosted by :</span>{{ event.createdBy.username }}</p>
+      </div>
+    
+    </div>
+  </div>
+  

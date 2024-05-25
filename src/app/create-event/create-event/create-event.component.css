@@ -1,0 +1,61 @@
+.create-event-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-event-container form {
+  display: flex;
+  gap: 8rem;
+}
+
+.create-event-form-container {
+  background-color: #1010103f;
+  padding: 4rem;
+  border: 1px rgba(222, 220, 228, 0.368) solid;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input,
+textarea {
+  background-color: rgba(168, 179, 207, 0.08);
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+}
+
+
+textarea {
+  resize: none;
+}
+
+label,
+p {
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.radio {
+  margin-top: 0.8rem;
+  padding: 0.5rem 0rem;
+
+  background-color: rgba(168, 179, 207, 0.08);
+
+
+}
+
+#eventImage{
+  padding: 1.5rem 1rem;
+}
